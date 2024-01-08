@@ -6,6 +6,6 @@ metadata:
 spec:
   type: url
   targets:
-     - https://{{ gitlab_host }}/{{ gitlab_group }}/rh1-software-templates/blob/main/scaffolder-templates/quarkus-stssc-template/template.yaml
-     - https://{{ gitlab_host }}/{{ gitlab_group }}/rh1-software-templates/blob/main/scaffolder-templates/register-component/template.yaml
+     - https://gitlab-gitlab.apps.cluster-jdqzf.sandbox2353.opentlc.com/rhdh/rh1-software-templates/blob/main/scaffolder-templates/quarkus-stssc-template/template.yaml
+     - https://gitlab-gitlab.apps.cluster-jdqzf.sandbox2353.opentlc.com/rhdh/rh1-software-templates/blob/main/scaffolder-templates/register-component/template.yaml
 
