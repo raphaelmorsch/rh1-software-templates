@@ -6,7 +6,7 @@ metadata:
   tags:
     - rh-one
 spec:
-  owner: raphaelmoreira  
+  owner: rhdh  
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Resource
@@ -17,7 +17,7 @@ metadata:
     backstage.io/managed-by-location: "url:https://github.com/my-org/my-repo/blob/master/database.yaml"
 spec:
   type: database
-  owner: raphaelmoreira
+  owner: rhdh
   system: rh-one-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -29,7 +29,7 @@ metadata:
     backstage.io/managed-by-location: "url:https://github.com/my-org/my-repo/blob/master/s3-bucket.yaml"
 spec:
   type: storage
-  owner: raphaelmoreira
+  owner: rhdh
   system: rh-one-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -42,7 +42,7 @@ metadata:
 spec:
   type: grpc
   lifecycle: production
-  owner: raphaelmoreira
+  owner: rhdh
   system: rh-one-system
   definition: |
     syntax = "proto3";
@@ -67,7 +67,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: raphaelmoreira
+  owner: rhdh
   system: rh-one-system
   dependsOn:
     - resource:rh-one_database
@@ -85,7 +85,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: raphaelmoreira
+  owner: rhdh
   system: rh-one-system
   consumesApis:
     - events_api
